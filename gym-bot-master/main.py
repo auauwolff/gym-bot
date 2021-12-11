@@ -34,7 +34,8 @@ except:
     print('filter button error')
       
 try:
-    filterButton = browser.find_element_by_xpath('//*[@id="program-check-835"]')
+    filterButton = browser.find_element_by_xpath('//*[@id="program-check-858"]')
+    #filterButton = browser.find_element_by_xpath('//*[@id="program-check-835"]')
     browser.execute_script("arguments[0].click();", filterButton)
 except:
     print('filter checkbox error')  
@@ -66,7 +67,8 @@ except:
 time.sleep(4) 
 
 try:
-    selectPilates = browser.find_element_by_xpath("//*[contains(text(), '06:30 - 07:30')]")
+    selectPilates = browser.find_element_by_xpath("//*[contains(text(), '09:30 - 10:00')]")
+    #selectPilates = browser.find_element_by_xpath("//*[contains(text(), '06:30 - 07:30')]")
     browser.execute_script("arguments[0].click();", selectPilates)
 except:
     print('Pilates error select class')
